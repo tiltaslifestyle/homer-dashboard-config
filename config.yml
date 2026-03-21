@@ -3,11 +3,11 @@
 # See https://fontawesome.com/search for icons options
 
 title: "Homepage"
-subtitle: "tiltaslifestyle's"
+subtitle: "v.2.0.0"
 icon: "fas fa-house-laptop"
 
 header: true
-footer: '<p><small>2026</small></p>' # set false if you want to hide it
+footer: '<p><small>This is the Way</small></p>' # set false if you want to hide it
 
 # Optional navbar
 links:
@@ -19,7 +19,7 @@ links:
 # Optional theme customization
 theme: default
 stylesheet:
-  - "assets/custom.css?v=1"
+  - "assets/custom.css?v=2"
 
 # Optional theme customization (color overrrides)
 colors:
@@ -59,27 +59,27 @@ colors:
 #   content: "This is a dummy homepage demo. <br /> Find more information on <a href='https://github.com/bastienwirtz/homer'>github.com/bastienwirtz/homer</a>"
 
 services:
-  - name: "System"
-    icon: "fas fa-gear"
+  - name: "Infrastructure"
+    icon: "fas fa-screwdriver-wrench"
     items:
-      - name: "Network configuration"
+      - name: "Router"
         icon: "fas fa-network-wired"
-        subtitle: "192.168.100.1"
-        tag: "configuration"
+        subtitle: "Network routing and DHCP"
+        tag: "network"
         url: "http://router.lan/"
+      - name: "AdGuard Home"
+        logo: "https://github.com/homarr-labs/dashboard-icons/blob/main/png/adguard-home.png?raw=true"
+        subtitle: "DNS filtering and ad blocking"
+        tag: "network"
+        url: "http://192.168.100.30:8080/"
       - name: "ArgoCD"
         logo: "https://github.com/homarr-labs/dashboard-icons/blob/main/png/argo-cd.png?raw=true"
-        subtitle: "GitOps management"
-        tag: "configuration"
+        subtitle: "GitOps continuous delivery"
+        tag: "gitops"
         url: "https://argocd.192.168.100.30.nip.io/"
   - name: "Applications"
     icon: "fas fa-server"
     items:
-      - name: "AdGuard Home"
-        logo: "https://github.com/homarr-labs/dashboard-icons/blob/main/png/adguard-home.png?raw=true"
-        subtitle: "DNS configuration"
-        tag: "configuration"
-        url: "http://192.168.100.30:8080/"
       - name: "Home Assistant"
         logo: "https://github.com/homarr-labs/dashboard-icons/blob/main/png/home-assistant.png?raw=true"
         subtitle: "Smart home management"

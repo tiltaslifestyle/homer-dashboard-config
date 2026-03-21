@@ -1,1 +1,13 @@
-.navbar-menu { display: none !important; }
+/* .navbar-menu { display: none !important; } */
+
+/* .navbar-item.is-inline-block-mobile {
+  display: none !important;
+} */
+
+[aria-label="Toggle dark mode"] {
+    display: none;
+}
+
+/* .search-bar.navbar-item.is-inline-block-mobile {
+    display: none !important;
+} */
