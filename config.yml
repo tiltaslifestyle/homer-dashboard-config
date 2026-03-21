@@ -3,11 +3,11 @@
 # See https://fontawesome.com/search for icons options
 
 title: "Homepage"
-subtitle: "v.2.2.0"
+subtitle: "v.2.2.1"
 icon: "fas fa-house-laptop"
 
 header: true # set false if you want to hide it
-footer: '<p><small><i>This is the Way</i></small></p>' # set false if you want to hide it
+footer: '<p><small><i>This is the Way <3</i></small></p>' # set false if you want to hide it
 
 # Optional navbar
 links:
@@ -17,7 +17,7 @@ links:
     target: "_blank" 
 
 stylesheet:
-  - "assets/custom.css?v=2.2"
+  - "assets/custom.css?v=2.3"
 
 # Optional theme customization (color overrrides)
 colors:
