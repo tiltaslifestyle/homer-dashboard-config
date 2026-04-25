@@ -1,17 +1,18 @@
 ---
 title: "Homepage"
-subtitle: "v.3.0"
+subtitle: "v.4.0"
 icon: "fas fa-house-laptop"
 
-header: false
-footer: '<p><small><i>This is the Way <3</i></small></p>' # set false if you want to hide it
+header: true
+footer: '<p style="color: #588067;"><i>This is the Way</i></p>' # Set false if you want to hide it
 
 links:
   - name: "homelab"
-    icon: "fab fa-github"
+    icon: "fab fa-github" # You can use any icon from https://fontawesome.com/icons?d=gallery&m=free
     url: "https://github.com/tiltaslifestyle/homelab"
     target: "_blank" 
   - name: "config"
+    icon: "fas fa-gear"
     url: "https://github.com/tiltaslifestyle/homer-dashboard-config"
     target: "_blank" 
 
@@ -21,34 +22,34 @@ stylesheet:
 columns: "4" # You can change this to any number that is a factor of 12: (1, 2, 3, 4, 6, 12)
 theme: default
 colors:
-  light:
-    highlight-primary: "#fff5f2"
-    highlight-secondary: "#fff5f2"
-    highlight-hover: "#bebebe"
-    background: "#12152B"
-    card-background: "rgba(255, 245, 242, 0.8)"
-    text: "#ffffff"
-    text-header: "#fafafa"
-    text-title: "#000000"
-    text-subtitle: "#111111"
-    card-shadow: rgba(0, 0, 0, 0.5)
-    link: "#3273dc"
-    link-hover: "#2e4053"
-    background-image: "../assets/wallpaper-light.jpeg" # Change wallpaper.jpeg to the name of your own custom wallpaper!
+  # light:
+  #   highlight-primary: "#fff5f2"
+  #   highlight-secondary: "#fff5f2"
+  #   highlight-hover: "#bebebe"
+  #   background: "#12152B"
+  #   card-background: "rgba(255, 245, 242, 0.8)"
+  #   text: "#ffffff"
+  #   text-header: "#fafafa"
+  #   text-title: "#000000"
+  #   text-subtitle: "#111111"
+  #   card-shadow: rgba(0, 0, 0, 0.5)
+  #   link: "#3273dc"
+  #   link-hover: "#2e4053"
+  #   background-image: "../assets/wallpaper-light.jpeg" # Change wallpaper.jpeg to the name of your own custom wallpaper!
   dark:
-    highlight-primary: "#181C3A"
-    highlight-secondary: "#181C3A"
-    highlight-hover: "#1F2347"
-    background: "#12152B"
-    card-background: "rgba(24, 28, 58, 0.8)"
-    text: "#eaeaea"
-    text-header: "#7C71DD"
-    text-title: "#fafafa"
-    text-subtitle: "#8B8D9C"
-    card-shadow: rgba(0, 0, 0, 0.5)
-    link: "#c1c1c1"
-    link-hover: "#fafafa"
-    background-image: "../assets/wallpaper.jpeg"
+    highlight-primary: "#57856b"
+    highlight-secondary: "#8ecba1"
+    highlight-hover: "##57836a"
+    background: "#142118"
+    card-background: "rgba(87, 131, 106, 0.3)"
+    text: "#57856b"
+    text-header: "#8dcfa3"
+    text-title: "#8ecba1"
+    text-subtitle: "#588067"
+    card-shadow: rgba(0, 0, 0, 1)
+    link: "#57856b"
+    link-hover: "#8ecba1"
+    # background-image: "../assets/wallpaper.jpeg"
 
 # # Optional message
 # message:
@@ -63,61 +64,67 @@ services:
     icon: "fas fa-screwdriver-wrench"
     items:
       - name: "Router"
-        # icon: "fas fa-network-wired"
-        logo: "https://github.com/homarr-labs/dashboard-icons/blob/main/png/router.png?raw=true"
+        icon: "fas fa-network-wired"
+        # logo: "https://github.com/homarr-labs/dashboard-icons/blob/main/png/router.png?raw=true"
         subtitle: "Network routing and DHCP"
         tag: "network"
-        tagstyle: "is-primary" # This will display the is-primary color! Try changing it to; is-link, is-info, is-success, is-warning or is-danger!
+        tagstyle: "is-danger" # This will display the is-primary color! Try changing it to; is-link, is-info, is-success, is-warning or is-danger!
         url: "http://router.lan/"
         target: "_blank"
       - name: "AdGuard Home"
-        logo: "https://github.com/homarr-labs/dashboard-icons/blob/main/png/adguard-home.png?raw=true"
+        icon: "fas fa-shield-halved"
+        # logo: "https://github.com/homarr-labs/dashboard-icons/blob/main/png/adguard-home.png?raw=true"
         subtitle: "DNS filtering and ad blocking"
         tag: "network"
-        tagstyle: "is-primary" # This will display the is-primary color! Try changing
+        tagstyle: "is-danger"
         url: "http://192.168.100.30:8080/"
         target: "_blank"
   - name: "Platform"
     icon: "fas fa-cubes"
     items:
       - name: "ArgoCD"
-        logo: "https://github.com/homarr-labs/dashboard-icons/blob/main/png/argo-cd.png?raw=true"
+        icon: "fa-brands fa-octopus-deploy"
+        # logo: "https://github.com/homarr-labs/dashboard-icons/blob/main/png/argo-cd.png?raw=true"
         subtitle: "GitOps continuous delivery"
         tag: "gitops"
-        tagstyle: "is-primary" # This will display the is-primary color! Try changing it to; is-link, is-info, is-success, is-warning or is-danger!
+        tagstyle: "is-danger"
         url: "https://argocd.192.168.100.30.nip.io/"
         target: "_blank"
   - name: "Monitoring"
     icon: "fas fa-chart-line"
     items:
       - name: "Grafana"
-        logo: "https://github.com/homarr-labs/dashboard-icons/blob/main/png/grafana.png?raw=true"
+        icon: "fas fa-chart-bar"
+        # logo: "https://github.com/homarr-labs/dashboard-icons/blob/main/png/grafana.png?raw=true"
         subtitle: "Analytics and monitoring platform"
         tag: "monitoring"
-        tagstyle: "is-primary"
+        tagstyle: "is-danger"
         url: "http://grafana.lan/"
         target: "_blank"
       - name: "Uptime Kuma"
-        logo: "https://github.com/homarr-labs/dashboard-icons/blob/main/png/uptime-kuma.png?raw=true"
+        icon: "fas fa-heartbeat"
+        # logo: "https://github.com/homarr-labs/dashboard-icons/blob/main/png/uptime-kuma.png?raw=true"
         subtitle: "Uptime monitoring and status page"
         tag: "monitoring"
-        tagstyle: "is-primary"
+        tagstyle: "is-danger"
         url: "http://uptime-kuma.lan/"
         target: "_blank"
   - name: "Applications"
     icon: "fas fa-server"
     items:
       - name: "Home Assistant"
-        logo: "https://github.com/homarr-labs/dashboard-icons/blob/main/png/home-assistant.png?raw=true"
+        icon: "fas fa-house-signal"
+        # logo: "https://github.com/homarr-labs/dashboard-icons/blob/main/png/home-assistant.png?raw=true"
         subtitle: "Smart home management"
         tag: "smart-home"
-        tagstyle: "is-primary"
+        tagstyle: "is-danger"
         url: "https://home-assistant.lan/"
         target: "_blank"
       - name: "Esphome"
-        logo: "https://github.com/homarr-labs/dashboard-icons/blob/main/png/esphome.png?raw=true"
+        icon: "fas fa-microchip"
+        # logo: "https://github.com/homarr-labs/dashboard-icons/blob/main/png/esphome.png?raw=true"
         subtitle: "IoT device management"
         tag: "smart-home"
-        tagstyle: "is-primary"
+        tagstyle: "is-danger"
         url: "https://esphome.lan/"
         target: "_blank"

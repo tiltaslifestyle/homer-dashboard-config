@@ -108,16 +108,29 @@ body #bighead .navbar a:focus, body #bighead .navbar a:hover {
    color: var(--link-hover);
 }
 
+/* Hides the navbar menu */
 /* .navbar-menu { display: none !important; } */
 
-/* .navbar-item.is-inline-block-mobile {
+/* Hides layout toggle button */
+.navbar-item.is-inline-block-mobile {
   display: none !important;
-} */
+}
 
-/* [aria-label="Toggle dark mode"] {
+/* Hides the dark mode toggle button */
+[aria-label="Toggle dark mode"] {
     display: none;
-} */
+}
 
-/* .search-bar.navbar-item.is-inline-block-mobile {
+/* Hides the search bar */
+.search-bar.navbar-item.is-inline-block-mobile {
     display: none !important;
-} */
+}
+
+.navbar-menu { 
+  height: 50%;
+} 
+
+.tag.is-danger {
+    background-color: #c5161d;
+    color: #142019;
+}
